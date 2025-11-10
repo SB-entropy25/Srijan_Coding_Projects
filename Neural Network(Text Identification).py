@@ -13,7 +13,7 @@ transform = transforms.Compose([
     transforms.Lambda(lambda x: x.view(-1))              # Flatten 28x28 to 784
 ])
 
-train_path = 'C:/Users/Srijan Bhushan/Documents/Srijan Files/Python/VS Code/mnist_png/training'
+train_path = 'C:/Users/Srijan Bhushan/Documents/Srijan Files/Python/VS Code/mnist_png/training' #we are using MNIST folder for traing and testing dataset
 test_path = 'C:/Users/Srijan Bhushan/Documents/Srijan Files/Python/VS Code/mnist_png/testing'
 
 train_set = datasets.ImageFolder(root=train_path, transform=transform)
@@ -97,3 +97,4 @@ plt.ylabel('Accuracy')
 plt.title('MNIST Accuracy vs Epoch')
 plt.legend()
 plt.show()
+
